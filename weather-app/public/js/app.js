@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (e) => {
 });
 
 const weatherFrom = async (location) => {
-  const response = await fetch(`http://localhost:3001/weather?address=${location}`);
+  const response = await fetch(`/weather?address=${location}`);
 
   response.json().then((data) => {
     if (data.error) {
